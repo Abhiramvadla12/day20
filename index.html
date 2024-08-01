@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<style>
+    .total{
+        display: flex;
+        justify-content: space-between;
+        gap: 10em;
+    }
+    #top_container_left {
+        font-size: 1.1em;
+        display: flex;
+        gap: 2em;
+        align-items: center;
+       
+        
+    }
+    .top_container_right{
+        display: flex;
+        gap: 2em;
+        height: 30px;
+        align-items: center;
+        justify-content: end;
+    }
+    #search_box{
+        border: 2px solid;
+        border-radius: 20px;
+    }
+    input{
+        height: 30px;
+        border-radius: 20px;
+        border: none;
+    }
+    input::placeholder{
+        opacity: 0.9;
+    }
+    .item:hover{
+        background-color: rgb(30, 233, 30);
+        height: 40px;
+        text-align: center;
+    }
+    .star:hover{
+        border-radius: 10px;
+        background-color: lightgrey;
+    }
+    .line-2{
+        display: flex;
+        justify-content: start;
+        flex-direction: row;
+        overflow-x: scroll;
+        gap: 15px;
+        border: 2px solid;
+        background-color: black;
+        color: white; height: 50px;
+        align-items: center;
+    }
+    .elements:hover{
+        background-color: black;
+        opacity: 0.5;
+    }
+</style>
+<body>
+    <nav class="total">
+        <nav id="top_container_left">
+            <div class="item">
+                <img src="./w3.jpeg" alt="image not found" height="40px" width="40px">
+            </div>
+            <div class="item">
+                Tutorials
+                <i class="fa fa-caret-down" style="font-size:20px"></i>
+            </div>
+            <div class="item">Exercises
+                <i class="fa fa-caret-down" style="font-size:20px"></i>
+            </div>
+            <div class="item">Certificates
+                <i class="fa fa-caret-down" style="font-size:20px"></i>
+            </div>
+            <div class="item">Services
+                <i class="fa fa-caret-down" style="font-size:20px"></i>
+            </div>
+            <div class="item1">
+                <div id="search_box">
+                    <input type="text" placeholder="Search...">
+                    🔎
+                </div>
+            </div>
+            <span class="material-symbols-outlined">
+                contrast
+            </span>
+        </nav>
+        <nav class="top_container_right">
+            <div class="star">✨ Plus</div>
+            <div class="star">
+                &lt; &sol; &gt;Space
+            </div>
+            <div class="star">
+                <i class="fa fa-shopping-cart" style="font-size:20px"></i> Get certified
+            </div>
+            <div style="border: 2px solid;border-radius: 10px;background-color: lightgreen;" class="star" >
+                <div style="border:2px solid;background-color:rgb(5, 246, 5);display: inline-block;border-radius: 10px;opacity: 1;padding: 10px;">SignUp</div>&emsp;
+                <span>Login</span>
+            </div>
+        </nav>
+        </nav>
+    <nav class="line-2">
+        <div class="elements">HTML</div>
+        <div class="elements">CSS</div>
+        <div class="elements">JAVASCRIPT</div>
+        <div class="elements">SQL</div>
+        <div class="elements">PYHTON</div>
+        <div class="elements">JAVA</div>
+        <div class="elements">PHP</div>
+        <div class="elements">HOW_TO</div>
+        <div class="elements">W3.CSS</div>
+        <div class="elements">C</div>
+        <div class="elements">C+</div>
+        <div class="elements">C#</div>
+        <div class="elements">BOOTSTRAP</div>
+        <div class="elements">REACT</div>
+        <div class="elements">MYSQL</div>
+        <div class="elements">JQUERY</div>
+        <div class="elements">EXCEL</div>
+        <div class="elements">XML</div>
+        <div class="elements">DJANGO</div>
+        <div class="elements">NUMPY</div>
+        <div class="elements">PANDAS</div>
+        <div class="elements">NODEJS</div>
+        <div class="elements">R</div>
+        <div class="elements">TYPESCRIPT</div>
+        <div class="elements">GIT</div>
+        <div class="elements">ANGULAR</div>
+        <div class="elements">POSTGRESQL</div>
+        <div class="elements">MANGODB</div>
+        <div class="elements">ASP</div>
+        <div class="elements">AI</div>
+        <div class="elements">GO</div>
+        <div class="elements">KOTLIN</div>
+        <div class="elements">SASS</div>
+        <div class="elements">VUE</div>
+        <div class="elements">DSA</div>
+        <div class="elements">GENAI</div>
+        <div class="elements">SCIPY</div>
+        <div class="elements">AWS</div>
+        <div class="elements">CYBERSECURITY</div>
+        <div class="elements">DATASCIENCE</div>
+    </nav>    
+</body>
+</html>
