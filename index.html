@@ -11,7 +11,7 @@
     .total{
         display: flex;
         justify-content: space-between;
-        gap: 10em;
+        position: relative;
     }
     #top_container_left {
         font-size: 1.1em;
@@ -24,10 +24,11 @@
     }
     .top_container_right{
         display: flex;
-        gap: 2em;
+        gap: 0.5em;
         height: 30px;
         align-items: center;
-        justify-content: end;
+        position:absolute;
+        left: 70vw;
     }
     #search_box{
         border: 2px solid;
@@ -67,6 +68,17 @@
         background-color: black;
         opacity: 0.5;
     }
+    @media screen and (max-width:1024px){
+        .space{
+            display:none;
+        }
+        .login{
+            display:none;
+        }
+        .top_container_right{
+            left: 80vw;
+        }
+    }
     
 </style>
 <body>
@@ -100,18 +112,18 @@
         </nav>
         <nav class="top_container_right">
             <div class="star">✨<span>Plus</span></div>
-            <div class="star">
-                &lt; &sol; &gt;<span>Space</span>
+            <div class="space">
+                &lt; &sol; &gt;<span class="space star">Space</span>
             </div>
             <div class="star">
                 <i class="fa fa-shopping-cart" style="font-size:20px"></i> Get certified
             </div>
-            <div style="border: 2px solid;border-radius: 10px;background-color: lightgreen;" class="star" >
+            <div style="border: 2px solid;border-radius: 10px;background-color: lightgreen;" class="login star" >
                 <div style="border:2px solid;background-color:rgb(5, 246, 5);display: inline-block;border-radius: 10px;opacity: 1;padding: 10px;">SignUp</div>&emsp;
                 <span>Login</span>
             </div>
         </nav>
-        </nav>
+    </nav>
 <nav class="line-2">
         <div class="elements">HTML</div>
         <div class="elements">CSS</div>
