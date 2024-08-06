@@ -18,6 +18,7 @@
         display: flex;
         gap: 2em;
         align-items: center;
+        position: relative;
        
         
     }
@@ -31,11 +32,13 @@
     #search_box{
         border: 2px solid;
         border-radius: 20px;
+        position: relative;
     }
     input{
         height: 30px;
         border-radius: 20px;
         border: none;
+        position: relative;
     }
     input::placeholder{
         opacity: 0.9;
@@ -64,6 +67,7 @@
         background-color: black;
         opacity: 0.5;
     }
+    
 </style>
 <body>
     <nav class="total">
@@ -87,7 +91,7 @@
             <div class="item1">
                 <div id="search_box">
                     <input type="text" placeholder="Search...">
-                    <span style="position: absolute; left: 700px;">🔎</span>
+                    <span class="xyz" style="position: absolute; left: 140px;">🔎</span>
                 </div>
             </div>
             <span class="material-symbols-outlined">
